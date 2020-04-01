@@ -1,0 +1,94 @@
+$c: ".header-top";
+
+#{$c} {
+    
+    #{$c}__logo {
+        @include media-breakpoint-down(md) {
+            text-align: center;
+        }
+    }
+    #{$c}__mob-menu {
+        text-align: right;
+        line-height: 0;
+        @include media-breakpoint-down(md) {
+            text-align: left;
+        }
+        
+        &-icon {
+            width: 25px;
+            height: 2px;
+            border-radius: map-get($global-border-radius, big);
+            display: inline-block;
+            background: $font-global-color;
+            position: relative;
+            vertical-align: middle;
+            cursor: pointer;
+            
+            &:after, &:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background: inherit;
+                left: -5px;
+                border-radius: inherit;
+            }
+            &:after {
+                bottom: -6px;
+            }
+            &:before {
+                top: -6px;
+            }
+        }
+    }
+    #{$c}__menu {
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+        
+        &-li {
+            display: inline-block;
+            margin-right: 30px;
+        }
+        &-link {
+            text-decoration: none;
+            @include text(300, $font-size-normal+2px);
+            padding-bottom: map-get($global-space, small);
+            padding-top: map-get($global-space, small);
+        }
+    }
+    #{$c}__loc {
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+        
+        &-text {
+            @include text(500, $font-size-tiny+2px, $font-size-tiny, darken($font-global-color-shadow, 25%));
+        }
+        &-city {
+            @include text(300, $font-size-small+2px, $font-size-small);
+            display: block;
+            padding-top: 5px;
+        }
+    }
+    #{$c}__account {
+        text-align: right;
+        
+        &-text {
+            @include text(300, $font-size-small+2px, $font-size-small);
+            text-decoration: none;
+            vertical-align: middle;
+            @include media-breakpoint-down(sm) {
+                display: none;
+            }
+        }
+    }
+    #{$c}__user-pic {
+        display: inline-block;
+        margin-right: 16px;
+        vertical-align: middle;
+        @include media-breakpoint-down(sm) {
+            margin-right: 0;
+        }
+    }
+}

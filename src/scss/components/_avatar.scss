@@ -1,0 +1,15 @@
+.avatar {
+    border-radius: map-get($global-border-radius, max);
+    
+    &_user {
+        width:34px;
+        height:34px;
+        border: 1px solid #BBBBBB;
+    }
+    &_catalog {
+        width:48px;
+        height:48px;
+        position: relative;
+        
+    }
+}

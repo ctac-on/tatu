@@ -1,0 +1,210 @@
+$c: ".filter";
+
+#{$c} {
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    @include media-breakpoint-down(md) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    &__wrapper {
+        z-index: 100;
+        
+        @include media-breakpoint-down(md) {
+            position: fixed;
+            top: 15px;
+            bottom: 15px;
+            left: 15px;
+            right: 15px;
+            border-radius: map-get($global-border-radius, md);
+            border: 0.5px solid #E2E2E2;
+            background: #FBFBFB;
+            display: none;
+            overflow: scroll;
+        }
+        @include media-breakpoint-up(lg){
+            height: 0;
+            overflow: hidden;
+            transition: height 0.5s linear;
+        }
+    }
+    #{$c}__groupe {
+        max-width: 276px;
+        @include media-breakpoint-down(md) {
+            max-width: 100%;    
+        }
+        
+        &_1 {
+            border-bottom: 1px;
+            border-style: solid;
+            border-color: #E4E4E4;
+        }
+    }
+    #{$c}__title {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        @include text(500, 21px, 18px);
+        @include media-breakpoint-down(md) {
+            padding-top: 20px;
+            margin: auto;
+        }
+    }
+    #{$c}__item {
+        padding-bottom: 15px;
+        
+        &-checkbox {
+            display: block;
+            position: relative;
+            cursor: pointer;
+            user-select: none;
+        }
+        &-tags {
+            display: block;
+            margin-left: -5px;
+            max-width: 700px;
+        }
+        &-label {
+            @include text(500, 19px, $font-size-small);
+            position: relative;
+            padding-left: 35px;
+            display: inline-block;
+            height: 20px;
+            
+            &:before {
+                content: "";
+                width: 20px;
+                height: 20px;
+                border-radius: map-get($global-border-radius, max);
+                position: absolute;
+                background: #D5D5D5;
+                top: 0;
+                left: 1px;
+            }
+            &:after {
+                content: "";
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                border-radius: map-get($global-border-radius, max);
+                top: 5px;
+                left: 6px;
+            }
+            &_active {
+                color: #14D2B8;
+                
+                &:before {
+                    background: #14D2B8;
+                }
+                &:after {
+                    background: #FFFFFF;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+                }
+            }
+        }
+     }
+     #{$c}__checkbox {
+        position: absolute;
+        width: 0;
+        height: 0;
+        padding: 0;
+        margin: 0;
+        opacity: 0;
+     }
+     #{$c}__tags {
+        display: inline-block;
+        position: relative;
+        margin: 5px 5px 20px;
+        
+        &-wrapper {
+            @include media-breakpoint-up(lg){
+                margin-top: -65px;
+            }
+        }
+        &-groupe {
+            @include media-breakpoint-down(md){
+                border-bottom: 1px;
+                border-style: solid;
+                border-color: #E4E4E4;
+            }
+        }
+        &-label {
+            padding: 6px 8px;
+            background: #f2f2f2;
+            border-radius: 10px;
+            cursor: pointer;
+            @include text(300, $font-size-small+4px, $font-size-small, #828282);
+            
+            &_active {
+                background: #2C2E3A;
+                color: white;
+            }
+        }     
+     }
+     #{$c}__block-button {
+        @include media-breakpoint-down(md){
+            position: initial;
+        }
+     }
+     #{$c}__button {
+        @include media-breakpoint-up(lg){
+            width: 100%;
+            text-align: center;
+            background: #14D2B8;
+            border: 0;
+            padding: 18px 10px;
+            @include text(500, $font-size-small+2px, $font-size-small, white);
+            cursor: pointer;
+            border-radius: map-get($global-border-radius, md);
+            margin-bottom: 20px;
+            
+            &:hover {background: #158C7A;}
+        }
+        @include media-breakpoint-down(md){
+            border: 0;
+            background: #14D2B8;
+            font-size: 0;
+            width: 24px;
+            height: 24px;
+            border-radius: map-get($global-border-radius, max);
+            position: absolute;
+            top: -35px;
+            right: 31px;
+            background-image: url('../img/gala.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+    #{$c}__close {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        background: url('../img/close.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+        @include media-breakpoint-down(md){
+            top:-33px;
+            left:31px;
+            right: unset;
+        }
+    }
+    &__header {
+        display: none;
+        
+        @include media-breakpoint-down(md){
+            display: block;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px;
+            border-style: solid;
+            border-color: #E4E4E4;
+            text-align: center;
+            width: 100%;
+            background: white;
+        }
+    }
+}

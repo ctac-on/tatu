@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Тестовое задание</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="shadow" id="shadow"></div>
+        <header>
+            <div class="container header-top">
+                <div class="row align-items-center">
+                    <div class="col-4 col-lg-1 header-top__logo">
+                        <a href="#" class="logo">
+                            <img src="img/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-4 col-lg-1 order-first order-lg-0 header-top__mob-menu">
+                        <div class="header-top__mob-menu-icon"></div>
+                    </div>
+                    <div class="col-md-6 header-top__menu">
+                        <nav>
+                            <ul>
+                                <li class="header-top__menu-li"><a href="" class="header-top__menu-link">Мастера</a></li>
+                                <li class="header-top__menu-li"><a href="" class="header-top__menu-link">Студии</a></li>
+                                <li class="header-top__menu-li"><a href="" class="header-top__menu-link">Галерея татуировок</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-2 header-top__loc">
+                        <span class="header-top__loc-text">Ваш город:</span>
+                        <a href="#" class="header-top__loc-city">Санкт-Петербург</a>
+                    </div>
+                    <div class="col-4 col-lg-2 header-top__account">
+                        <a href="#" class="header-top__user-pic"><img src="img/img1.jpg" alt="user" class="avatar avatar_user"></a>
+                        <a href="#" class="header-top__account-text">Дмитрий</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="container header-bottom">
+                <div class="o-block o-block_header header-bottom__wrapper">
+                    <div class="row align-items-center header-bottom__row">
+                        <div class="col-lg-5 header-bottom__titles">
+                            <h1 class="header-bottom__h1 header-bottom__h1_active">Тату-мастера</h1>
+                            <h1 class="header-bottom__h1">Тату-студии</h1>
+                        </div>
+                        <div class="col-lg-7 header-bottom__tools">
+                            <div class="header-bottom__search">
+                                <a href="#"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="header-bottom__icon">
+                                    <path d="M15.8605 15.184L11.9722 11.2958C13.0153 10.0967 13.6468 8.53215 13.6468 6.82217C13.6468 3.05809 10.5851 0 6.82458 0C3.0605 0 0.00240326 3.06164 0.00240326 6.82217C0.00240326 10.5827 3.06404 13.6443 6.82458 13.6443C8.53456 13.6443 10.0991 13.0129 11.2982 11.9698L15.1864 15.8581C15.2787 15.9503 15.4028 16 15.5235 16C15.6441 16 15.7683 15.9539 15.8605 15.8581C16.045 15.6736 16.045 15.3685 15.8605 15.184ZM0.956727 6.82217C0.956727 3.5867 3.5891 0.957871 6.82103 0.957871C10.0565 0.957871 12.6853 3.59024 12.6853 6.82217C12.6853 10.0541 10.0565 12.69 6.82103 12.69C3.5891 12.69 0.956727 10.0576 0.956727 6.82217Z" fill="#2C2E3A"/>
+                                </svg></a>
+                                <input type="text" name="serach" class="header-bottom__search-input" placeholder="Найти мастера">
+                            </div>
+                            <div class="header-bottom__item header-bottom__item-filter">
+                                <a data-action="open-filter" href="#"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="header-bottom__icon">
+                                    <g clip-path="url(#clip0)">
+                                        <path d="M15.1397 1.20476e-06H0.874863C0.623271 -0.000474698 0.392618 0.140075 0.277608 0.363906C0.161013 0.590752 0.181476 0.863919 0.330433 1.07109L5.55645 8.43296C5.5582 8.43549 5.5601 8.43787 5.56185 8.44041C5.75173 8.69676 5.85437 9.00721 5.855 9.32638V15.3284C5.85389 15.5063 5.92369 15.677 6.04901 15.8031C6.17433 15.9292 6.3447 15.9999 6.52237 15.9999C6.61279 15.9999 6.70211 15.9818 6.78555 15.9473L9.72217 14.8275C9.98534 14.7472 10.16 14.4989 10.16 14.1999V9.32638C10.1605 9.00737 10.2633 8.69676 10.453 8.44041C10.4547 8.43787 10.4566 8.43549 10.4584 8.43296L15.6842 1.07078C15.8332 0.86376 15.8537 0.590752 15.7371 0.363906C15.6221 0.140075 15.3914 -0.000474698 15.1397 1.20476e-06ZM9.79815 7.95928C9.50627 8.35538 9.34843 8.8343 9.34748 9.32638V14.1012L6.66721 15.1232V9.32638C6.66625 8.8343 6.50841 8.35538 6.21637 7.95928L1.1428 0.812205H14.8719L9.79815 7.95928Z" fill="#2C2E3A"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0">
+                                            <rect width="16" height="16" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg></a>
+                                <a data-action="open-filter" href="#" class="header-bottom__link">Фильтр</a>
+                            </div>
+                            <div class="header-bottom__item">
+                                <a href="#"><svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="header-bottom__icon">
+                                    <path d="M6.05242 3.50635C4.92482 3.50635 4.00702 4.42415 4.00702 5.55175C4.00702 6.67935 4.92482 7.59715 6.05242 7.59715C7.18002 7.59715 8.09782 6.67935 8.09782 5.55175C8.09782 4.42415 7.18002 3.50635 6.05242 3.50635ZM6.05242 7.01275C5.24682 7.01275 4.59142 6.35734 4.59142 5.55175C4.59142 4.74615 5.24682 4.09075 6.05242 4.09075C6.85802 4.09075 7.51342 4.74615 7.51342 5.55175C7.51342 6.35734 6.85802 7.01275 6.05242 7.01275Z" fill="black"/>
+                                    <path d="M9.96304 1.64129C8.90469 0.582939 7.49746 0 6.00081 0C4.50387 0 3.09692 0.582939 2.03857 1.64129C0.0799573 3.59961 -0.163445 7.28426 1.51145 9.51666L6.00081 16L10.4834 9.52572C12.1651 7.28426 11.9217 3.59961 9.96304 1.64129ZM10.0095 9.18414L6.00081 14.9732L1.98569 9.17508C0.466538 7.14955 0.684227 3.82198 2.45204 2.05446C3.39993 1.10656 4.66019 0.5844 6.00081 0.5844C7.34142 0.5844 8.60168 1.10656 9.54987 2.05446C11.3177 3.82198 11.5354 7.14955 10.0095 9.18414Z" fill="black"/>
+                                </svg></a>
+                                <a href="#" class="header-bottom__link header-bottom__link_maps">Показать на карте</a>
+                            </div>
+                        </div>
+                    </div>
+                    <form method="post" id="filter" class="filter__wrapper">
+                        <div class="filter__header">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="header-bottom__icon">
+                                    <g clip-path="url(#clip0)">
+                                        <path d="M15.1397 1.20476e-06H0.874863C0.623271 -0.000474698 0.392618 0.140075 0.277608 0.363906C0.161013 0.590752 0.181476 0.863919 0.330433 1.07109L5.55645 8.43296C5.5582 8.43549 5.5601 8.43787 5.56185 8.44041C5.75173 8.69676 5.85437 9.00721 5.855 9.32638V15.3284C5.85389 15.5063 5.92369 15.677 6.04901 15.8031C6.17433 15.9292 6.3447 15.9999 6.52237 15.9999C6.61279 15.9999 6.70211 15.9818 6.78555 15.9473L9.72217 14.8275C9.98534 14.7472 10.16 14.4989 10.16 14.1999V9.32638C10.1605 9.00737 10.2633 8.69676 10.453 8.44041C10.4547 8.43787 10.4566 8.43549 10.4584 8.43296L15.6842 1.07078C15.8332 0.86376 15.8537 0.590752 15.7371 0.363906C15.6221 0.140075 15.3914 -0.000474698 15.1397 1.20476e-06ZM9.79815 7.95928C9.50627 8.35538 9.34843 8.8343 9.34748 9.32638V14.1012L6.66721 15.1232V9.32638C6.66625 8.8343 6.50841 8.35538 6.21637 7.95928L1.1428 0.812205H14.8719L9.79815 7.95928Z" fill="#2C2E3A"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0">
+                                            <rect width="16" height="16" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span class="header-bottom__link">Фильтр</span>
+                            </div>
+                        <div class="row align-items-start filter">
+                            <div class="col-lg-4 order-1 order-lg-0">
+                                <fieldset class="filter__groupe filter__groupe_1">
+                                    <legend class="filter__title">Укажите уровень мастера</legend>
+                                    <ul>
+                                        <li class="filter__item">
+                                            <label class="filter__item-checkbox">
+                                                <input class="filter__checkbox" type="checkbox" name="">
+                                                <span class="filter__item-label">Любой уровень</span>
+                                            </label>   
+                                        </li>
+                                        <li class="filter__item">
+                                            <label class="filter__item-checkbox">
+                                                <input class="filter__checkbox" type="checkbox" name="">
+                                                <span class="filter__item-label">Начинающий (до 1 года)</span>
+                                            </label>   
+                                        </li>
+                                        <li class="filter__item">
+                                            <label class="filter__item-checkbox">
+                                                <input class="filter__checkbox" type="checkbox" name="">
+                                                <span class="filter__item-label">Мастер (1 - 3 года)</span>
+                                            </label>   
+                                        </li>
+                                        <li class="filter__item">
+                                            <label class="filter__item-checkbox">
+                                                <input class="filter__checkbox" type="checkbox" name="">
+                                                <span class="filter__item-label">Профессионал (более 3 лет)</span>
+                                            </label>   
+                                        </li>
+                                    </ul>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-4 order-3 order-lg-0">
+                                <fieldset class="filter__groupe filter__groupe_1">
+                                    <legend class="filter__title">Где работает мастер</legend>
+                                    <ul>
+                                        <li class="filter__item">
+                                            <label class="filter__item-checkbox">
+                                                <input class="filter__checkbox" type="checkbox" name="">
+                                                <span class="filter__item-label">Не важно</span>
+                                            </label>   
+                                        </li>
+                                        <li class="filter__item">
+                                            <label class="filter__item-checkbox">
+                                                <input class="filter__checkbox" type="checkbox" name="">
+                                                <span class="filter__item-label">На дому</span>
+                                            </label>   
+                                        </li>
+                                        <li class="filter__item">
+                                            <label class="filter__item-checkbox">
+                                                <input class="filter__checkbox" type="checkbox" name="">
+                                                <span class="filter__item-label">Домашняя студия</span>
+                                            </label>   
+                                        </li>
+                                        <li class="filter__item">
+                                            <label class="filter__item-checkbox">
+                                                <input class="filter__checkbox" type="checkbox" name="">
+                                                <span class="filter__item-label">Студия</span>
+                                            </label>   
+                                        </li>
+                                    </ul>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-4 order-4 order-lg-0">
+                                <fieldset class="filter__groupe">
+                                    <legend class="filter__title">Стоимость</legend>
+                                    <ul>
+                                        <li class="filter__item">
+                                            <label class="filter__item-checkbox">
+                                                <input class="filter__checkbox" type="checkbox" name="">
+                                                <span class="filter__item-label">до 500 ₽</span>
+                                            </label>   
+                                        </li>
+                                        <li class="filter__item">
+                                            <label class="filter__item-checkbox">
+                                                <input class="filter__checkbox" type="checkbox" name="">
+                                                <span class="filter__item-label">500 - 1000 ₽</span>
+                                            </label>   
+                                        </li>
+                                        <li class="filter__item">
+                                            <label class="filter__item-checkbox">
+                                                <input class="filter__checkbox" type="checkbox" name="">
+                                                <span class="filter__item-label">1000 - 3000 ₽</span>
+                                            </label>   
+                                        </li>
+                                        <li class="filter__item">
+                                            <label class="filter__item-checkbox">
+                                                <input class="filter__checkbox" type="checkbox" name="">
+                                                <span class="filter__item-label">3000 - 5000 ₽</span>
+                                            </label>   
+                                        </li>
+                                        <li class="filter__item">
+                                            <label class="filter__item-checkbox">
+                                                <input class="filter__checkbox" type="checkbox" name="">
+                                                <span class="filter__item-label">5000 - 10000 ₽</span>
+                                            </label>   
+                                        </li>
+                                        <li class="filter__item">
+                                            <label class="filter__item-checkbox">
+                                                <input class="filter__checkbox" type="checkbox" name="">
+                                                <span class="filter__item-label">более 10000 ₽</span>
+                                            </label>   
+                                        </li>
+                                    </ul>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-8 filter__tags-wrapper order-2 order-lg-0">
+                                <fieldset class="filter__tags-groupe">
+                                    <legend class="filter__title">Стили татуировки</legend>
+                                    <div class="filter__item-tags">
+                                        <label class="filter__tags">
+                                            <input class="filter__checkbox" type="checkbox" name="">
+                                            <span class="filter__tags-label">авторскийстиль</span>
+                                        </label>
+                                        <label class="filter__tags">
+                                            <input class="filter__checkbox" type="checkbox" name="">
+                                            <span class="filter__tags-label">акварель</span>
+                                        </label>
+                                        <label class="filter__tags">
+                                            <input class="filter__checkbox" type="checkbox" name="">
+                                            <span class="filter__tags-label">геометрия</span>
+                                        </label>
+                                        <label class="filter__tags">
+                                            <input class="filter__checkbox" type="checkbox" name="">
+                                            <span class="filter__tags-label">графика</span>
+                                        </label>
+                                        <label class="filter__tags">
+                                            <input class="filter__checkbox" type="checkbox" name="">
+                                            <span class="filter__tags-label">dotwork</span>
+                                        </label>
+                                        <label class="filter__tags">
+                                            <input class="filter__checkbox" type="checkbox" name="">
+                                            <span class="filter__tags-label">dotwork</span>
+                                        </label>
+                                        <label class="filter__tags">
+                                            <input class="filter__checkbox" type="checkbox" name="">
+                                            <span class="filter__tags-label">blackwork</span>
+                                        </label>
+                                        <label class="filter__tags">
+                                            <input class="filter__checkbox" type="checkbox" name="">
+                                            <span class="filter__tags-label">биомеханика</span>
+                                        </label>
+                                        <label class="filter__tags">
+                                            <input class="filter__checkbox" type="checkbox" name="">
+                                            <span class="filter__tags-label">blackwork</span>
+                                        </label>
+                                        <label class="filter__tags">
+                                            <input class="filter__checkbox" type="checkbox" name="">
+                                            <span class="filter__tags-label">биомеханика</span>
+                                        </label>
+                                        <label class="filter__tags">
+                                            <input class="filter__checkbox" type="checkbox" name="">
+                                            <span class="filter__tags-label">blackwork</span>
+                                        </label>
+                                        <label class="filter__tags">
+                                            <input class="filter__checkbox" type="checkbox" name="">
+                                            <span class="filter__tags-label">blackwork</span>
+                                        </label>
+                                        <label class="filter__tags">
+                                            <input class="filter__checkbox" type="checkbox" name="">
+                                            <span class="filter__tags-label">blackwork</span>
+                                        </label>
+                                        <label class="filter__tags">
+                                            <input class="filter__checkbox" type="checkbox" name="">
+                                            <span class="filter__tags-label">black&gray</span>
+                                        </label>
+                                        <label class="filter__tags">
+                                            <input class="filter__checkbox" type="checkbox" name="">
+                                            <span class="filter__tags-label">ботаника</span>
+                                        </label>
+                                        <label class="filter__tags">
+                                            <input class="filter__checkbox" type="checkbox" name="">
+                                            <span class="filter__tags-label">биомеханика</span>
+                                        </label>
+                                        <label class="filter__tags">
+                                            <input class="filter__checkbox" type="checkbox" name="">
+                                            <span class="filter__tags-label">blackwork</span>
+                                        </label>
+                                        <label class="filter__tags">
+                                            <input class="filter__checkbox" type="checkbox" name="">
+                                            <span class="filter__tags-label">биомеханика</span>
+                                        </label>
+                                        <label class="filter__tags">
+                                            <input class="filter__checkbox" type="checkbox" name="">
+                                            <span class="filter__tags-label">blackwork</span>
+                                        </label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-3 align-self-end filter__block-button">
+                                <input type="submit" name="button" id="button" value="Применить фильтр" class="filter__button">
+                            </div>
+                            <div class="filter__close" id="close"></div>
+                        </div>
+                     </form>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="o-wrapper">
+                <div class="container catalog">
+                    <h2 class="catalog__title">Обратите внимание</h2>
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <div class="row">
+                                <div class="col-lg-4 catalog__item-wrapper">
+                                    <div class="o-block_item catalog__item">
+                                        <div class="catalog__item-blockImg">
+                                            <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                        </div>
+                                        <div class="catalog__item-title">
+                                            <div class="catalog__item-pic">
+                                                <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                            </div>
+                                            <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                        </div>
+                                        <div class="catalog__item-price">1 500 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 catalog__item-wrapper">
+                                    <div class="o-block_item catalog__item catalog__item_hot">
+                                        <div class="catalog__item-blockImg">
+                                            <img src="img/img3.jpg" alt="1" class="catalog__item-img">
+                                        </div>
+                                        <div class="catalog__item-title">
+                                            <div class="catalog__item-pic">
+                                                <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                            </div>
+                                            <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                        </div>
+                                        <div class="catalog__item-price">1 500 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 catalog__item-wrapper">
+                                    <div class="o-block_item catalog__item">
+                                        <div class="catalog__item-blockImg">
+                                            <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                        </div>
+                                        <div class="catalog__item-title">
+                                            <div class="catalog__item-pic">
+                                                <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                            </div>
+                                            <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                        </div>
+                                        <div class="catalog__item-price">1 500 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 catalog__item-wrapper">
+                                    <div class="o-block_item catalog__item">
+                                        <div class="catalog__item-blockImg">
+                                            <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                        </div>
+                                        <div class="catalog__item-title">
+                                            <div class="catalog__item-pic">
+                                                <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                            </div>
+                                            <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                        </div>
+                                        <div class="catalog__item-price">1 500 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 catalog__item-wrapper">
+                                    <div class="o-block_item catalog__item">
+                                        <div class="catalog__item-blockImg">
+                                            <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                        </div>
+                                        <div class="catalog__item-title">
+                                            <div class="catalog__item-pic">
+                                                <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                            </div>
+                                            <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                        </div>
+                                        <div class="catalog__item-price">1 500 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 catalog__item-wrapper">
+                                    <div class="o-block_item catalog__item catalog__item_add">
+                                        <a href="#" class="catalog__item-addLink">Показать еще</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 catalog__item-wrapper">
+                            <div class="o-block catalog__item ads">
+                                <a href="#" class="ads_1"><span class="ads__text ads__text_1">рекламный<br>баннер</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="o-wrapper o-wrapper_2">
+                <div class="container catalog">
+                    <h2 class="catalog__title">Лучший рейтинг</h2>
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <div class="row">
+                                <div class="col-lg-4 catalog__item-wrapper">
+                                    <div class="o-block_item catalog__item">
+                                        <div class="catalog__item-blockImg">
+                                            <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                        </div>
+                                        <div class="catalog__item-title">
+                                            <div class="catalog__item-pic">
+                                                <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                            </div>
+                                            <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                        </div>
+                                        <div class="catalog__item-price">1 500 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 catalog__item-wrapper">
+                                    <div class="o-block_item catalog__item catalog__item_hot">
+                                        <div class="catalog__item-blockImg">
+                                            <img src="img/img3.jpg" alt="1" class="catalog__item-img">
+                                        </div>
+                                        <div class="catalog__item-title">
+                                            <div class="catalog__item-pic">
+                                                <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                            </div>
+                                            <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                        </div>
+                                        <div class="catalog__item-price">1 500 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 catalog__item-wrapper">
+                                    <div class="o-block_item catalog__item catalog__item_hot">
+                                        <div class="catalog__item-blockImg">
+                                            <img src="img/img3.jpg" alt="1" class="catalog__item-img">
+                                        </div>
+                                        <div class="catalog__item-title">
+                                            <div class="catalog__item-pic">
+                                                <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                            </div>
+                                            <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                        </div>
+                                        <div class="catalog__item-price">1 500 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 catalog__item-wrapper">
+                                    <div class="o-block_item catalog__item">
+                                        <div class="catalog__item-blockImg">
+                                            <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                        </div>
+                                        <div class="catalog__item-title">
+                                            <div class="catalog__item-pic">
+                                                <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                            </div>
+                                            <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                        </div>
+                                        <div class="catalog__item-price">1 500 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 catalog__item-wrapper">
+                                    <div class="o-block_item catalog__item">
+                                        <div class="catalog__item-blockImg">
+                                            <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                        </div>
+                                        <div class="catalog__item-title">
+                                            <div class="catalog__item-pic">
+                                                <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                            </div>
+                                            <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                        </div>
+                                        <div class="catalog__item-price">1 500 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 catalog__item-wrapper">
+                                    <div class="o-block_item catalog__item catalog__item_add">
+                                        <a href="#" class="catalog__item-addLink">Показать еще</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 catalog__item-wrapper">
+                            <div class="o-block catalog__item ads">
+                                <a href="#" class="ads_1"><span class="ads__text ads__text_1">рекламный<br>баннер</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="o-wrapper">
+                 <div class="container catalog">
+                    <h2 class="catalog__title">Мастера из Санкт-Петербурга</h2>
+                    <div class="row">
+                        <div class="col-lg-3 catalog__item-wrapper">
+                            <div class="o-block_item catalog__item">
+                                <div class="catalog__item-blockImg">
+                                    <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                </div>
+                                <div class="catalog__item-title">
+                                    <div class="catalog__item-pic">
+                                        <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                    </div>
+                                    <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                </div>
+                                <div class="catalog__item-price">1 500 ₽</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 catalog__item-wrapper">
+                            <div class="o-block_item catalog__item">
+                                <div class="catalog__item-blockImg">
+                                    <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                </div>
+                                <div class="catalog__item-title">
+                                    <div class="catalog__item-pic">
+                                        <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                    </div>
+                                    <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                </div>
+                                <div class="catalog__item-price">1 500 ₽</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 catalog__item-wrapper">
+                            <div class="o-block_item catalog__item">
+                                <div class="catalog__item-blockImg">
+                                    <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                </div>
+                                <div class="catalog__item-title">
+                                    <div class="catalog__item-pic">
+                                        <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                    </div>
+                                    <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                </div>
+                                <div class="catalog__item-price">1 500 ₽</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 catalog__item-wrapper">
+                            <div class="o-block_item catalog__item">
+                                <div class="catalog__item-blockImg">
+                                    <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                </div>
+                                <div class="catalog__item-title">
+                                    <div class="catalog__item-pic">
+                                        <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                    </div>
+                                    <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                </div>
+                                <div class="catalog__item-price">1 500 ₽</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 catalog__item-wrapper">
+                            <div class="o-block_item catalog__item">
+                                <div class="catalog__item-blockImg">
+                                    <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                </div>
+                                <div class="catalog__item-title">
+                                    <div class="catalog__item-pic">
+                                        <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                    </div>
+                                    <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                </div>
+                                <div class="catalog__item-price">1 500 ₽</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 catalog__item-wrapper">
+                            <div class="o-block_item catalog__item">
+                                <div class="catalog__item-blockImg">
+                                    <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                </div>
+                                <div class="catalog__item-title">
+                                    <div class="catalog__item-pic">
+                                        <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                    </div>
+                                    <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                </div>
+                                <div class="catalog__item-price">1 500 ₽</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 catalog__item-wrapper">
+                            <div class="o-block_item catalog__item">
+                                <div class="catalog__item-blockImg">
+                                    <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                </div>
+                                <div class="catalog__item-title">
+                                    <div class="catalog__item-pic">
+                                        <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                    </div>
+                                    <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                </div>
+                                <div class="catalog__item-price">1 500 ₽</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 catalog__item-wrapper">
+                            <div class="o-block_item catalog__item">
+                                <div class="catalog__item-blockImg">
+                                    <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                </div>
+                                <div class="catalog__item-title">
+                                    <div class="catalog__item-pic">
+                                        <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                    </div>
+                                    <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                </div>
+                                <div class="catalog__item-price">1 500 ₽</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 catalog__item-wrapper">
+                            <div class="o-block_item catalog__item">
+                                <div class="catalog__item-blockImg">
+                                    <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                </div>
+                                <div class="catalog__item-title">
+                                    <div class="catalog__item-pic">
+                                        <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                    </div>
+                                    <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                </div>
+                                <div class="catalog__item-price">1 500 ₽</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 catalog__item-wrapper">
+                            <div class="o-block_item catalog__item">
+                                <div class="catalog__item-blockImg">
+                                    <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                </div>
+                                <div class="catalog__item-title">
+                                    <div class="catalog__item-pic">
+                                        <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                    </div>
+                                    <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                </div>
+                                <div class="catalog__item-price">1 500 ₽</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 catalog__item-wrapper">
+                            <div class="o-block_item catalog__item">
+                                <div class="catalog__item-blockImg">
+                                    <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                </div>
+                                <div class="catalog__item-title">
+                                    <div class="catalog__item-pic">
+                                        <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                    </div>
+                                    <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                </div>
+                                <div class="catalog__item-price">1 500 ₽</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 catalog__item-wrapper">
+                            <div class="o-block_item catalog__item">
+                                <div class="catalog__item-blockImg">
+                                    <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                </div>
+                                <div class="catalog__item-title">
+                                    <div class="catalog__item-pic">
+                                        <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                    </div>
+                                    <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                </div>
+                                <div class="catalog__item-price">1 500 ₽</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 catalog__item-wrapper">
+                            <div class="o-block_item catalog__item">
+                                <div class="catalog__item-blockImg">
+                                    <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                </div>
+                                <div class="catalog__item-title">
+                                    <div class="catalog__item-pic">
+                                        <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                    </div>
+                                    <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                </div>
+                                <div class="catalog__item-price">1 500 ₽</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 catalog__item-wrapper">
+                            <div class="o-block_item catalog__item">
+                                <div class="catalog__item-blockImg">
+                                    <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                </div>
+                                <div class="catalog__item-title">
+                                    <div class="catalog__item-pic">
+                                        <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                    </div>
+                                    <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                </div>
+                                <div class="catalog__item-price">1 500 ₽</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 catalog__item-wrapper">
+                            <div class="o-block_item catalog__item">
+                                <div class="catalog__item-blockImg">
+                                    <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                </div>
+                                <div class="catalog__item-title">
+                                    <div class="catalog__item-pic">
+                                        <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                    </div>
+                                    <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                </div>
+                                <div class="catalog__item-price">1 500 ₽</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 catalog__item-wrapper">
+                            <div class="o-block_item catalog__item">
+                                <div class="catalog__item-blockImg">
+                                    <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                </div>
+                                <div class="catalog__item-title">
+                                    <div class="catalog__item-pic">
+                                        <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                    </div>
+                                    <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                </div>
+                                <div class="catalog__item-price">1 500 ₽</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 catalog__item-wrapper">
+                            <div class="o-block_item catalog__item">
+                                <div class="catalog__item-blockImg">
+                                    <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                </div>
+                                <div class="catalog__item-title">
+                                    <div class="catalog__item-pic">
+                                        <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                    </div>
+                                    <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                </div>
+                                <div class="catalog__item-price">1 500 ₽</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 catalog__item-wrapper">
+                            <div class="o-block_item catalog__item">
+                                <div class="catalog__item-blockImg">
+                                    <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                </div>
+                                <div class="catalog__item-title">
+                                    <div class="catalog__item-pic">
+                                        <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                    </div>
+                                    <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                </div>
+                                <div class="catalog__item-price">1 500 ₽</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 catalog__item-wrapper">
+                            <div class="o-block_item catalog__item">
+                                <div class="catalog__item-blockImg">
+                                    <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                </div>
+                                <div class="catalog__item-title">
+                                    <div class="catalog__item-pic">
+                                        <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                    </div>
+                                    <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                </div>
+                                <div class="catalog__item-price">1 500 ₽</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 catalog__item-wrapper">
+                            <div class="o-block_item catalog__item">
+                                <div class="catalog__item-blockImg">
+                                    <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                </div>
+                                <div class="catalog__item-title">
+                                    <div class="catalog__item-pic">
+                                        <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                    </div>
+                                    <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                </div>
+                                <div class="catalog__item-price">1 500 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="o-wrapper o-wrapper_mob">
+                <div class="container catalog">
+                    <div class="row">
+                                <div class="col-sm-6 col-lg-3 catalog__item-wrapper">
+                                    <div class="o-block_item catalog__item">
+                                        <div class="catalog__item-blockImg">
+                                            <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                        </div>
+                                        <div class="catalog__item-title">
+                                            <div class="catalog__item-pic">
+                                                <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                            </div>
+                                            <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                        </div>
+                                        <div class="catalog__item-price">1 500 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 catalog__item-wrapper">
+                                    <div class="o-block_item catalog__item">
+                                        <div class="catalog__item-blockImg">
+                                            <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                        </div>
+                                        <div class="catalog__item-title">
+                                            <div class="catalog__item-pic">
+                                                <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                            </div>
+                                            <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                        </div>
+                                        <div class="catalog__item-price">1 500 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 catalog__item-wrapper">
+                                    <div class="o-block_item catalog__item">
+                                        <div class="catalog__item-blockImg">
+                                            <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                        </div>
+                                        <div class="catalog__item-title">
+                                            <div class="catalog__item-pic">
+                                                <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                            </div>
+                                            <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                        </div>
+                                        <div class="catalog__item-price">1 500 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 catalog__item-wrapper">
+                                    <div class="o-block_item catalog__item catalog__item_hot">
+                                        <div class="catalog__item-blockImg">
+                                            <img src="img/img4.jpg" alt="1" class="catalog__item-img">
+                                        </div>
+                                        <div class="catalog__item-title">
+                                            <div class="catalog__item-pic">
+                                                <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                            </div>
+                                            <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                        </div>
+                                        <div class="catalog__item-price">1 500 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 catalog__item-wrapper">
+                                    <div class="o-block_item catalog__item">
+                                        <div class="catalog__item-blockImg">
+                                            <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                        </div>
+                                        <div class="catalog__item-title">
+                                            <div class="catalog__item-pic">
+                                                <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                            </div>
+                                            <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                        </div>
+                                        <div class="catalog__item-price">1 500 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 catalog__item-wrapper">
+                                    <div class="o-block_item catalog__item">
+                                        <div class="catalog__item-blockImg">
+                                            <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                        </div>
+                                        <div class="catalog__item-title">
+                                            <div class="catalog__item-pic">
+                                                <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                            </div>
+                                            <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                        </div>
+                                        <div class="catalog__item-price">1 500 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 catalog__item-wrapper">
+                                    <div class="o-block_item catalog__item">
+                                        <div class="catalog__item-blockImg">
+                                            <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                        </div>
+                                        <div class="catalog__item-title">
+                                            <div class="catalog__item-pic">
+                                                <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                            </div>
+                                            <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                        </div>
+                                        <div class="catalog__item-price">1 500 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 catalog__item-wrapper">
+                                    <div class="o-block_item catalog__item">
+                                        <div class="catalog__item-blockImg">
+                                            <img src="img/1.jpg" alt="1" class="catalog__item-img">
+                                        </div>
+                                        <div class="catalog__item-title">
+                                            <div class="catalog__item-pic">
+                                                <img src="img/img2.jpg" alt="2" class="avatar avatar_catalog">
+                                            </div>
+                                            <span class="catalog__item-text">Дмитрий Останинкинов</span>
+                                        </div>
+                                        <div class="catalog__item-price">1 500 ₽</div>
+                                    </div>
+                                </div>
+                    </div>                       
+                </div>
+            </div>
+        </section>
+        <div class="pagination">
+            <ul>
+                <li class="pagination__item"><a href="#" class="pagination__item-link pagination__item-link_active">1</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__item-link">2</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__item-link">3</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__item-link">4</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__item-link">5</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="ads">
+                <a href="#" class="ads_2"><span class="ads__text">рекламный<br>баннер</span></a>
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+        
+    </body>
+</html>

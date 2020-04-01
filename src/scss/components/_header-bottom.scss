@@ -1,0 +1,112 @@
+$c: ".header-bottom";
+
+#{$c} {
+    @include media-breakpoint-down(md) {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    #{$c}__wrapper {
+        @include media-breakpoint-up(lg){
+            margin-left: -25px;
+            margin-right: -25px;
+        }
+    }
+    #{$c}__row {
+        @include media-breakpoint-up(lg){
+            margin-left: 0;
+            margin-right: 0;
+            border-bottom: 0.5px;
+            border-style: solid;
+            border-color: #e2e2e2;
+        }
+    }
+    #{$c}__titles {
+        
+        @include media-breakpoint-down(md) {
+            text-align: center;
+            margin-top: 10px;
+        }
+        @include media-breakpoint-up(lg) {
+            padding-left: 27px;
+        }
+    }
+    #{$c}__h1 {
+        display: inline-block;
+        color: $font-global-color-shadow;
+        margin-right: 43px;
+        padding: 0px 5px;
+        padding-top: map-get($global-space, normal);
+        padding-bottom: map-get($global-space, normal);
+        @include media-breakpoint-down(md) {
+            padding-top: map-get($global-space, normal)-10px;
+            padding-bottom: map-get($global-space, normal)-10px;
+            border-bottom: 3px;
+            border-style: solid;
+            border-color: $global-color;
+        }
+        
+        &_active {
+            color: $font-global-color;
+            @include media-breakpoint-down(md) {
+                text-align: center;
+                border-color:#E93737;
+            }
+        }
+        &:last-of-type {
+            margin: 0;
+        }
+    }
+    #{$c}__tools {
+        padding-right: 25px;
+        text-align: right;
+        padding-top: map-get($global-space, small);
+        padding-bottom: map-get($global-space, small);
+        @include media-breakpoint-down(md) {
+            text-align: center;
+            border-top:0.5px;
+            border-bottom: 0.5px;
+            border-style: solid;
+            border-color: #E2E2E2;
+        }
+    }
+    #{$c}__search {
+        display: inline-block;
+        
+        &-input {
+            vertical-align: middle;
+            border: 0;
+            width: 120px;
+            margin-left: 7px;
+            @include text(500, $font-size-normal+3px);
+            @include media-breakpoint-down(sm) {
+                display: none;
+            }
+        }
+    }
+    #{$c}__icon {
+        vertical-align: middle;
+    }
+    #{$c}__item {
+        display: inline-block;
+        margin-left: 45px;
+        
+        &-filter {
+            &:hover a, &:hover a path, &_activ a, &_activ a path{
+                color: #E93737;
+                fill: #E93737;
+            }
+        }
+    }
+    &__link {
+        @include text(500, $font-size-normal+3px);
+        vertical-align: middle;
+        text-decoration: none;
+        margin-left: 7px;
+        &_maps {
+            @include media-breakpoint-down(sm) {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+//Размеры шрифтов
+$font-size-normal: 16px !default;
+$font-size-small:14px !default;
+$font-size-tiny:12px !default;
+$font-size-h1:24px !default;
+$font-size-h2:20px !default;
+
+//Основные цвета
+$font-global-color: #2C2E3A !default;
+$font-global-color-shadow: #B2B2B2 !default;
+$global-color: #FCFCFC !default;
+
+//отступы
+$global-space: (
+    big: 35px,
+    normal: 20px,
+    small:15px
+) !default;
+
+//границы
+$global-border-radius: (
+    max: 100%,
+    big: 8px,
+    md: 4px
+) !default;
+
+//шрифты
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Light.eot');
+    src:url('../fonts/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Light.woff') format('woff'),
+        url('../fonts/Gilroy-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Medium.eot');
+    src: url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Medium.woff') format('woff'),
+        url('../fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Bold.eot');
+    src: url('../fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Bold.woff') format('woff'),
+        url('../fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}

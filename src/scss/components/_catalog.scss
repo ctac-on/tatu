@@ -1,0 +1,96 @@
+.catalog {
+    
+    &__title {
+        margin-bottom: map-get($global-space, normal)+5px;
+    }
+    &__item {
+        //margin-bottom: map-get($global-space, big);
+        position: relative;
+        overflow: hidden;
+        &_add {
+            height: 100%;
+            max-height: 280px;
+            background-image: url('../img/bird.png');
+            background-position: 90% 90%;
+            background-repeat: no-repeat;
+        }
+    
+        &-wrapper {
+            padding-bottom:map-get($global-space, big);
+        }    
+        &-blockImg {
+            height: 160px;
+            position: relative;
+        }
+        &-img {
+            width: 100%;
+            height: 100%;
+        }
+        &-title {
+            padding: 5px 15px 10px;
+            text-align: center;
+        }
+        &-pic {
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            
+            &:after {
+                content: "";
+                position: absolute;
+                width: 16px;
+                height: 19px;
+                background: url('../img/fire1.svg') center no-repeat;
+                top: 15px;
+                left: -7px;
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                width: 26px;
+                height: 39px;
+                background: url('../img/Ellipse.svg') center no-repeat;
+                top: -2px;
+                right: -2px;
+            }
+        }
+        &-text {
+            @include text(500, $font-size-small, $font-size-small);
+            margin-left: 13px;
+            vertical-align: middle;
+        }
+        &-price {
+            position: absolute;
+            top:15px;
+            left: 15px;
+            border-radius: 100px;
+            background: white;
+            @include text(500, $font-size-small+2px, $font-size-small);
+            padding: 5px 13px;
+        }
+        &_hot &-blockImg:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            background: url('../img/fire2.png') center no-repeat;
+            background-size: cover;
+        }
+        &_hot &-price {
+            background: #E93737;
+            color: white;
+        }
+        &-addLink {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            @include text(500, $font-size-small+8px, $font-size-small, #4E4E4E);
+            text-transform: uppercase;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

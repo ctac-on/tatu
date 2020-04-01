@@ -1,0 +1,7 @@
+//стили текста
+@mixin text($weight, $height, $size: $font-size-normal, $color: $font-global-color) {
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+  line-height: $height;
+};

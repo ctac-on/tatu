@@ -1,0 +1,27 @@
+$c: '.pagination';
+
+#{$c} {
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 65px;
+    text-align: center;
+    
+    #{$c}__item {
+        display: inline-block;
+        margin: 0 7px;
+        
+        &-link {
+            text-decoration: none;
+            @include text(500, $font-size-tiny, $font-size-tiny);
+            padding: 15px 17px;
+            border: 1px solid #D5D5D5;
+            background: white;
+            
+            &_active {
+                background: #14D2B8;
+                border-color: #2C2E3A;
+                color: white;
+            }
+        }
+    }
+}

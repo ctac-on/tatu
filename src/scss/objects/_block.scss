@@ -1,0 +1,19 @@
+.o-block {
+    border-radius: map-get($global-border-radius, md);
+    border: 0.5px solid #E2E2E2;
+    background: white;
+    
+    &_header {
+        @include media-breakpoint-down(md) {
+            border-radius: 0;
+            border: 0;
+            background: none;
+        }      
+    }
+    &_item {
+        background: white;
+        border-radius: map-get($global-border-radius, big);
+        display: block;
+        border: 1px solid #D5D5D5; 
+    }
+}

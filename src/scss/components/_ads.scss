@@ -1,0 +1,46 @@
+.ads {
+    height: 100%;
+    width: 100%;
+    min-height: 170px;
+    
+    &_1 {
+        height: 100%;
+        width: 100%;
+        background: url('../img/IMG_012.jpg') center no-repeat;
+        display: block;
+        background-size: cover;
+        text-decoration: none;
+    }
+    &__text {
+        @include text(bold, $font-size-h2 + 2px, $font-size-h2, #FF0000);
+        text-transform: uppercase;
+        text-align: center;
+        &_1 {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 20%;
+        }
+    }
+    &_2 {
+        background: white;
+        height: 100%;
+        width: 100%;
+        min-height: 170px;
+        display: flex;
+        background-image: url('../img/IMG_0225.png');
+        background-repeat: no-repeat;
+        background-position: 90% 50%;
+        background-size: auto;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        padding: 0 10px;
+        
+        @include media-breakpoint-down(md) {
+            justify-content: flex-start;
+            background-position: 100% 50%;
+                background-size: contain;
+        }
+    }
+}
